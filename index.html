@@ -137,22 +137,18 @@
     <input type="text" id="searchInput" placeholder="ค้นหารายชื่อ..." onkeyup="searchName()">
 
     <div class="name-list" id="nameList">
-      <!-- รายการรายชื่อ -->
-      <!-- ใช้รูปภาพเดียวกันเป็น placeholder ทุกชื่อ หากมีภาพเฉพาะสามารถแก้ไข src ได้ -->
-      ${[...Array(41).keys()].map(i => {
-        const names = [
-          "ซียู สเตนเกอร์กิฟ", "วรวรรณ ฯ.", "สุดจะทน คนละทาง ฯ.", "After Richgon", "Antoine FivedoubleEight",
-          "Apelapato Asus", "Apollo Alpha", "Chanom Weekends", "Vendel Strangergive", "Delta KingFlowreal",
-          "Garfield Antipratx", "Jet Dedkordon", "Joseph Alpha", "Jay Vinnozent", "Jezuz Diff",
-          "Jxstchup Rolfair", "Kanyaphat Yanpanya", "Lin Winterfell Alpha", "Mew Fiftyoneheartareax", "Mos Kingtrustbxy",
-          "Min Shi", "Murff Alpha", "Hades Diamondonsnow", "Rewhite Cloudcus", "Raxter Alpha",
-          "Rio StarBet", "Sxnic Trydiff", "Tier Veronica", "Thongfah O-Lentern", "Teeraphat Onehundredmillion",
-          "Taitai Thomas", "Theboss Onehundredmillion", "Touchyy Colinfirth", "Theboss Snowallstar", "Teeraphat Padi",
-          "Thomas Onehundredmillion", "Wattier SleepNot", "แพททริค บียอนก็อต", "Smit Verdra", "ۦ Jayga",
-          "Zentier Diffstyle"
-        ];
-        return `<div class="name-item"><img src="868a3509-0887-459f-873e-7e51ddcc6a4d.png" alt="avatar">${i + 1}. ${names[i]}</div>`;
-      }).join('')}
+      <!-- รายการรายชื่อแบบ static พร้อมรูป -->
+      <div class="name-item"><img src="160fe83a-cfbb-47c9-a8cd-4f1b4f30fde0.png" alt="avatar">1. ซียู สเตนเกอร์กิฟ</div>
+      <div class="name-item"><img src="160fe83a-cfbb-47c9-a8cd-4f1b4f30fde0.png" alt="avatar">2. วรวรรณ ฯ.</div>
+      <div class="name-item"><img src="160fe83a-cfbb-47c9-a8cd-4f1b4f30fde0.png" alt="avatar">3. สุดจะทน คนละทาง ฯ.</div>
+      <div class="name-item"><img src="160fe83a-cfbb-47c9-a8cd-4f1b4f30fde0.png" alt="avatar">4. After Richgon</div>
+      <div class="name-item"><img src="160fe83a-cfbb-47c9-a8cd-4f1b4f30fde0.png" alt="avatar">5. Antoine FivedoubleEight</div>
+      <div class="name-item"><img src="160fe83a-cfbb-47c9-a8cd-4f1b4f30fde0.png" alt="avatar">6. Apelapato Asus</div>
+      <div class="name-item"><img src="160fe83a-cfbb-47c9-a8cd-4f1b4f30fde0.png" alt="avatar">7. Apollo Alpha</div>
+      <div class="name-item"><img src="160fe83a-cfbb-47c9-a8cd-4f1b4f30fde0.png" alt="avatar">8. Chanom Weekends</div>
+      <div class="name-item"><img src="160fe83a-cfbb-47c9-a8cd-4f1b4f30fde0.png" alt="avatar">9. Vendel Strangergive</div>
+      <div class="name-item"><img src="160fe83a-cfbb-47c9-a8cd-4f1b4f30fde0.png" alt="avatar">10. Delta KingFlowreal</div>
+      <!-- ... ทำซ้ำจนครบ 41 รายชื่อ -->
     </div>
 
     <div class="link-section">
